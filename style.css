@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* Small screens (mobile phones) */
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+  }
+  
+  /* Medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Styles for medium screens */
+  }
+  
+  /* Large screens (desktops) */
+  @media only screen and (min-width: 769px) {
+    /* Styles for large screens */
+  }
+  
+  /* Devices with a Retina display */
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+         only screen and (min--moz-device-pixel-ratio: 2),
+         only screen and (-o-min-device-pixel-ratio: 2/1),
+         only screen and (min-device-pixel-ratio: 2) {
+    /* Styles for devices with a Retina display */
+  }
+  
+
 
 * {
     margin: 0;
@@ -22,7 +46,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,15 +57,16 @@ header {
     font-size: 2em;
     color: #fff;
     user-select: none;
+    position:relative;
 }
 
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 15px;
 }
 
 .navigation a::after {
@@ -84,9 +109,9 @@ header {
 }
 
 .wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
+    position:relative;
+    width: auto;
+    height: auto;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -98,7 +123,7 @@ header {
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
-    right: 12%;
+    flex-direction: column;
 }
 
 .wrapper.active-popup {
@@ -107,6 +132,7 @@ header {
 
 .wrapper.active {
     height: 520px;
+
 }
 
 .wrapper .form-box {
@@ -125,7 +151,7 @@ header {
 }
 
 .wrapper .form-box.register {
-    position: absolute;
+    position: fixed;
     transition: none;
     transform: translateX(400px);
 }
@@ -277,13 +303,12 @@ header {
 
 
 #myText {
-    visibility: hidden;
-    position: relative;
-    top: -300px; /* adjust the value to move the text higher */
+    position: auto;
+    top:30%;/* adjust the value to move the text higher */
     color: white;
-    font-size: 24px; /* adjust the value to increase or decrease the font size */
-    text-align: center; /* center the text horizontally */
-    left: 10%;
+    font-size: 30px; /* adjust the value to increase or decrease the font size */
+    text-align: center;/* center the text horizontally */
+ 
   }
 
   footer {
@@ -296,5 +321,7 @@ header {
     padding: 10px;
   }
 
+
+ 
 
 

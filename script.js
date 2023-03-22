@@ -21,13 +21,8 @@ iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active');
 });
 
-    // Get the element with the ID "myText"
-  var myText = document.getElementById("myText");
+function hideText() {
+  var text = document.getElementById("myText");
+  text.style.display = "none";
+}
 
-  // Set the visibility of the element to "visible"
-  myText.style.visibility = "visible";
-
-  // Set a timeout to hide the element after 3 seconds (3000 milliseconds)
-  setTimeout(function() {
-    myText.style.visibility = "hidden";
-  }, 50000);
