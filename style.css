@@ -265,13 +265,13 @@ header {
 
 /* Define a CSS rule for the 'p' element inside the '.About' class */
 .About p {
-    font-size: 25px;
+    font-size: 24px;
     color:#fff;
 }
 
 .About {
     color:white;
-    font-size: 30px;
+    font-size: 24px;
 
 }
 
