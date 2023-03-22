@@ -263,9 +263,16 @@ header {
     font: weight 700px;
 }
 
-.About{
+/* Define a CSS rule for the 'p' element inside the '.About' class */
+.About p {
+    font-size: 25px;
+    color:#fff;
+}
+
+.About {
     color:white;
-    font-size:  14px;
+    font-size: 30px;
+
 }
 
 

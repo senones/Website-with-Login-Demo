@@ -47,7 +47,11 @@
   form input[type="submit"]:hover {
     background-color: #0d6aee;
   }
+  
+.About p  {
+font-size: 20px;
 
+}
   footer {
     position: fixed;
     bottom: 0;
