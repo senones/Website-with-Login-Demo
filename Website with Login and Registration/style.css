@@ -1,27 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-/* Small screens (mobile phones) */
-@media only screen and (max-width: 600px) {
-    /* Styles for small screens */
-  }
-
-  /* Medium screens (tablets) */
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    /* Styles for medium screens */
-  }
-
-  /* Large screens (desktops) */
-  @media only screen and (min-width: 769px) {
-    /* Styles for large screens */
-  }
-
-  /* Devices with a Retina display */
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-         only screen and (min--moz-device-pixel-ratio: 2),
-         only screen and (-o-min-device-pixel-ratio: 2/1),
-         only screen and (min-device-pixel-ratio: 2) {
-    /* Styles for devices with a Retina display */
-  }
-
 
 * {
     margin: 0;
@@ -45,7 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,16 +33,15 @@ header {
     font-size: 2em;
     color: #fff;
     user-select: none;
-    position:relative;
 }
 
 .navigation a {
     position: relative;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 .navigation a::after {
@@ -108,9 +84,9 @@ header {
 }
 
 .wrapper {
-    position:relative;
-    width: auto;
-    height: auto;
+    position: relative;
+    width: 400px;
+    height: 440px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -122,7 +98,6 @@ header {
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
-    flex-direction: column;
 }
 
 .wrapper.active-popup {
@@ -131,7 +106,6 @@ header {
 
 .wrapper.active {
     height: 520px;
-
 }
 
 .wrapper .form-box {
@@ -150,7 +124,7 @@ header {
 }
 
 .wrapper .form-box.register {
-    position: fixed;
+    position: absolute;
     transition: none;
     transform: translateX(400px);
 }
@@ -215,7 +189,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #eef2f5;
+    color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -232,9 +206,6 @@ header {
     font-size: .9em;
     color: #eff2f5;
     font-weight: 500;
-    margin: -15px 0 16px;
-    display: flex;
-    justify-content: space-between;
     margin: -15px 0 15px;
     display: flex;
     justify-content: space-between;
@@ -248,8 +219,6 @@ header {
 .remember-forgot a {
     color: #eaeff3;
     text-decoration: none;
-    margin-left:5px;
-
 }
 
 .remember-forgot a:hover {
@@ -286,44 +255,3 @@ header {
 .login-register p a:hover {
     text-decoration: underline;
 }
-
-/* about style */
-
-.bold{
-    font: weight 700px;
-}
-
-/* Define a CSS rule for the 'p' element inside the '.About' class */
-.About p {
-    font-size: 24px;
-    color:#fff;
-}
-
-.About {
-    color:white;
-    font-size: 24px;
-
-}
-
-
-#myText {
-    position: auto;
-    top:30%;/* adjust the value to move the text higher */
-    color: white;
-    font-size: 30px; /* adjust the value to increase or decrease the font size */
-    text-align: center;/* center the text horizontally */
-
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-
-
-
