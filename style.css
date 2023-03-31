@@ -108,7 +108,7 @@ header {
 }
 
 .wrapper {
-    position:relative;
+    position: relative;
     width: auto;
     height: auto;
     background: transparent;
@@ -116,14 +116,14 @@ header {
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px white;
-    display: flex;
+    display: flex; /* Änderung hier */
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
+    transform: scale(1);
     transition: transform .5s ease, height .2s ease;
     flex-direction: column;
-}
+  }
 
 .wrapper.active-popup {
     transform: scale(1);
@@ -305,15 +305,17 @@ header {
 
 }
 
-
-#myText {
+#btncenter{
     position: auto;
     top:30%;/* adjust the value to move the text higher */
-    color: white;
     font-size: 30px; /* adjust the value to increase or decrease the font size */
     text-align: center;/* center the text horizontally */
-
   }
+
+.show-form {
+    display: flex;
+  }
+
 
   footer {
     position: fixed;
@@ -324,6 +326,3 @@ header {
     text-align: center;
     padding: 10px;
   }
-
-
-

@@ -4,25 +4,25 @@ const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
 
-registerLink.addEventListener('click', ()=> {
-    wrapper.classList.add('active');
+registerLink.addEventListener('click', () => {
+  wrapper.classList.add('active');
 });
 
-loginLink.addEventListener('click', ()=> {
-    wrapper.classList.remove('active');
+loginLink.addEventListener('click', () => {
+  wrapper.classList.remove('active');
 });
 
-btnPopup.addEventListener('click', ()=> {
-    wrapper.classList.add('active-popup');
+btnPopup.addEventListener('click', () => {
+  wrapper.classList.add('active-popup');
+  setTimeout(() => {
+    wrapper.classList.add('show-form');
+  }, 50);
 });
 
-iconClose.addEventListener('click', ()=> {
-    wrapper.classList.remove('active-popup');
-    wrapper.classList.remove('active');
+iconClose.addEventListener('click', () => {
+  wrapper.classList.remove('active-popup');
+  setTimeout(() => {
+    wrapper.classList.remove('show-form');
+  }, 50);
+  wrapper.classList.remove('active');
 });
-
-function hideText() {
-  var text = document.getElementById("myText");
-  text.style.display = "none";
-}
-
